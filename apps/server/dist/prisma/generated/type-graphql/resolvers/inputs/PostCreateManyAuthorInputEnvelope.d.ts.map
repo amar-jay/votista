@@ -1,0 +1,1 @@
+{"version":3,"file":"PostCreateManyAuthorInputEnvelope.d.ts","sourceRoot":"","sources":["../../../../../../prisma/generated/type-graphql/resolvers/inputs/PostCreateManyAuthorInputEnvelope.ts"],"names":[],"mappings":"AAIA,OAAO,EAAE,yBAAyB,EAAE,MAAM,qCAAqC,CAAC;AAEhF,qBAGa,iCAAiC;IAI5C,IAAI,EAAG,yBAAyB,EAAE,CAAC;IAKnC,cAAc,CAAC,EAAE,OAAO,GAAG,SAAS,CAAC;CACtC"}

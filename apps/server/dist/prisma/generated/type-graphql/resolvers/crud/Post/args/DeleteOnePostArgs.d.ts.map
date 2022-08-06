@@ -1,0 +1,1 @@
+{"version":3,"file":"DeleteOnePostArgs.d.ts","sourceRoot":"","sources":["../../../../../../../../prisma/generated/type-graphql/resolvers/crud/Post/args/DeleteOnePostArgs.ts"],"names":[],"mappings":"AAEA,OAAO,EAAE,oBAAoB,EAAE,MAAM,sCAAsC,CAAC;AAE5E,qBACa,iBAAiB;IAI5B,KAAK,EAAG,oBAAoB,CAAC;CAC9B"}

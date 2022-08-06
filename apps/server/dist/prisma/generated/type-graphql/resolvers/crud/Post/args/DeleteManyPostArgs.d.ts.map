@@ -1,0 +1,1 @@
+{"version":3,"file":"DeleteManyPostArgs.d.ts","sourceRoot":"","sources":["../../../../../../../../prisma/generated/type-graphql/resolvers/crud/Post/args/DeleteManyPostArgs.ts"],"names":[],"mappings":"AAEA,OAAO,EAAE,cAAc,EAAE,MAAM,gCAAgC,CAAC;AAEhE,qBACa,kBAAkB;IAI7B,KAAK,CAAC,EAAE,cAAc,GAAG,SAAS,CAAC;CACpC"}

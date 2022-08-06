@@ -1,4 +1,23 @@
 "use strict";
+var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });
+}) : (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    o[k2] = m[k];
+}));
+var __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (function(o, v) {
+    Object.defineProperty(o, "default", { enumerable: true, value: v });
+}) : function(o, v) {
+    o["default"] = v;
+});
+var __importStar = (this && this.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (k !== "default" && Object.prototype.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);
+    __setModuleDefault(result, mod);
+    return result;
+};
 var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
     function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
     return new (P || (P = Promise))(function (resolve, reject) {
@@ -35,23 +54,26 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
         if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
     }
 };
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
 exports.__esModule = true;
-var express_1 = __importDefault(require("express"));
-var main = function () { return __awaiter(void 0, void 0, void 0, function () {
-    var app;
+require("reflect-metadata");
+var tq = __importStar(require("type-graphql"));
+var apollo_server_1 = require("apollo-server");
+var client_1 = require("./utils/client");
+var type_graphql_1 = require("@generated/type-graphql");
+var app = function () { return __awaiter(void 0, void 0, void 0, function () {
+    var schema;
     return __generator(this, function (_a) {
-        app = (0, express_1["default"])();
-        app.use(express_1["default"].json());
-        app.get("/", function (_, res) {
-            res.send("Hello World!");
-        });
-        app.listen(4000, function () {
-            console.log("Server started on port 3000");
-        });
-        return [2 /*return*/];
+        switch (_a.label) {
+            case 0: return [4 /*yield*/, tq.buildSchema({
+                    resolvers: type_graphql_1.resolvers
+                })];
+            case 1:
+                schema = _a.sent();
+                new apollo_server_1.ApolloServer({ schema: schema, context: client_1.prisma }).listen({ port: 4000 }, function () {
+                    return console.log("\uD83D\uDE80 Server ready at: http://localhost:4000\n\u2B50\uFE0F");
+                });
+                return [2 /*return*/];
+        }
     });
 }); };
-main();
+app();

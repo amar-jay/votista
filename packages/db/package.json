@@ -1,0 +1,13 @@
+{
+  "name": "db",
+  "version": "0.1.0",
+  "description": "",
+  "dependencies": {
+    "type-graphql": "^1.1.1"
+  },
+  "devDependencies": {
+    "@types/node": "16.11.47",
+    "tsconfig": "*",
+    "typescript": "4.7.4"
+  }
+}

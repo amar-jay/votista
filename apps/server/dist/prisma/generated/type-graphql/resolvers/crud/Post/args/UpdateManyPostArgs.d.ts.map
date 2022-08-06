@@ -1,0 +1,1 @@
+{"version":3,"file":"UpdateManyPostArgs.d.ts","sourceRoot":"","sources":["../../../../../../../../prisma/generated/type-graphql/resolvers/crud/Post/args/UpdateManyPostArgs.ts"],"names":[],"mappings":"AAEA,OAAO,EAAE,2BAA2B,EAAE,MAAM,6CAA6C,CAAC;AAC1F,OAAO,EAAE,cAAc,EAAE,MAAM,gCAAgC,CAAC;AAEhE,qBACa,kBAAkB;IAI7B,IAAI,EAAG,2BAA2B,CAAC;IAKnC,KAAK,CAAC,EAAE,cAAc,GAAG,SAAS,CAAC;CACpC"}

@@ -1,9 +1,8 @@
 {
-  "extends": "tsconfig/base.json",
+  "extends": "tsconfig/node16.json",
   "compilerOptions": {
-    "skipLibCheck": true,
-    "outDir": "./dist",
-    "jsx": "react-jsx"
+    "outDir": "./dist"
   },
-  "include": ["src/**/*.ts"]
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules"]
 }

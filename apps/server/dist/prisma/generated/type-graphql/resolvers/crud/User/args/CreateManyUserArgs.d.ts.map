@@ -1,0 +1,1 @@
+{"version":3,"file":"CreateManyUserArgs.d.ts","sourceRoot":"","sources":["../../../../../../../../prisma/generated/type-graphql/resolvers/crud/User/args/CreateManyUserArgs.ts"],"names":[],"mappings":"AAEA,OAAO,EAAE,mBAAmB,EAAE,MAAM,qCAAqC,CAAC;AAE1E,qBACa,kBAAkB;IAI7B,IAAI,EAAG,mBAAmB,EAAE,CAAC;IAK7B,cAAc,CAAC,EAAE,OAAO,GAAG,SAAS,CAAC;CACtC"}
