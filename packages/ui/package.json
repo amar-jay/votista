@@ -5,7 +5,8 @@
   "types": "./index.tsx",
   "license": "MIT",
   "scripts": {
-    "lint": "eslint *.ts*"
+    "lint": "eslint *.ts*",
+    "start": "webpack-dev-server --config webpack.config.js --hot"
   },
   "devDependencies": {
     "@types/react": "^17.0.37",
